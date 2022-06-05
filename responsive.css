@@ -1,0 +1,38 @@
+@media only screen and (max-width:768px) {
+    .about-info {
+        flex-direction: column;
+    }
+
+    .about-info img:not(#professional-photo) {
+        margin: 0;
+        height: auto;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .about-info .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .photos {
+        height: 100%;
+    }
+
+    .photos::after {
+        content: "";
+        height: 50px;
+        width: 100%;
+        position: relative;
+    }
+
+    #about h1:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    div #professional-photo{
+        display: none;
+    }
+}
